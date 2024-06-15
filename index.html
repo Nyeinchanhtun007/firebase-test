@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>User Information Form</h2>
+
+      <!-- Username Input -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <!-- Email Input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Gender Selection -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="file">Profile Image:</label>
+      <input type="file" id="file" name="file" required />
+
+      <!-- Submit Button -->
+      <button type="submit" id="saveUser">Submit</button>
+    </div>
+
+    <script type="module" src="dist/bundle.js"></script>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Profile</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr>
+          <td class="profile-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s"
+              alt=""
+            />
+          </td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJA32WU4rBpx7maglqeEtt3ot1tPIRWptxA&s"
+              alt=""
+            />
+          </td>
+          <td>Griffin</td>
+          <td>test@gmail.com</td>
+          <td>Male</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
